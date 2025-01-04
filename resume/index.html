@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NURUL HANAN</title>
+	<link rel="icon" href="images/hanan.ico" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="t1.css" />	
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+	<div class="banner">
+	   <div class="text">
+	      <center><h1 style="font-family:ar destine;font-size:90px;color:white">NURUL HANAN OTHMAN</h1></center>
+	   </div>
+	</div>  	
+
+	<div id="navbar">
+	   <a href="index.html" style="font-family:ar destine;font-size:35px;color:black">ABOUT ME</a>
+	   <a href="education.html" style="font-family:ar destine;font-size:35px;color:black">EDUCATION</a>
+	   <a href="co-curricular.html" style="font-family:ar destine;font-size:35px;color:black">CO-CURRICULAR</a>
+	   <a href="achievement.html" style="font-family:ar destine;font-size:35px;color:black">ACHIEVEMENT</a>
+	   <a href="skills.html" style="font-family:ar destine;font-size:35px;color:black">SKILLS</a>
+	</div>
+
+  	<div class="transbox">
+	<center>
+	   <h3 style="font-family:ar destine;font-size:70px;color:black;margin-top:10px;margin-bottom:10px;">ABOUT ME</h3>
+	   <img src="images/me.jpg" alt="me"; class="circle">
+	   <h3 style="font-family:ar destine;font-size:45px;color:black;margin-top:10px;margin-bottom:10px;">Library Management Student</h3>
+	   <br>
+
+		<table>
+			<tr>
+				<td><b>Name</b></td>
+				<td>Nurul Hanan Binti Othman</td>
+			</tr>
+			<tr>
+				<td><b>Age</b></td>
+				<td>22 years old</td>
+			</tr>
+			<tr>
+				<td><b>Address</b></td>
+				<td>Section 13, Shah Alam, Selangor</td>
+			</tr>
+			<tr>
+				<td><b>Email</b></td>
+				<td>nurulhanan97@yahoo.com</td>
+			</tr>
+			<tr>
+				<td><b>Phone</b></td>
+				<td>+60194480075</td>
+			</tr>
+		</table>
+	   <h3 style="font-family: 'Gugi', cursive;font-size:30px;color:black;margin-top:10px;margin-bottom:10px;">My Resume</h3>
+	   <br>
+
+	<a href="resume.pdf" download>
+	  <i class="fa fa-download" aria-hidden="true" style="font-size:100px";></i>
+	</a>
+
+	</center>
+  	</div>
+
+	<script>
+	   window.onscroll = function() {myFunction()};
+	   var navbar = document.getElementById("navbar");
+	   var sticky = navbar.offsetTop;
+	   function myFunction() {
+	   if (window.pageYOffset >= sticky) {
+	   navbar.classList.add("sticky")
+	   } else {
+	   navbar.classList.remove("sticky");
+	   }
+	   }
+	</script>
+
+
+	<div class="footer">
+	   <br>
+	   <center>
+	   <p>
+	      <a href="https://www.facebook.com/nurulhanan97">
+	         <img border="0" alt="facebook.com" src="images/facebook.png" width="70" height="70" style="padding:10px">
+	      </a>
+
+	      <a href="https://www.instagram.com/nurulhanan1807/?hl=en">
+	         <img border="0" alt="instagram.com" src="images/instagram.png" width="70" height="70" style="padding:10px">
+	      </a>
+	   </p>
+	   
+	   <marquee id='scroll_news' style="font-family:Book Antiqua; color: white" bgcolor="black" ><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">Copyright &copy;2019 Nurul Hanan | Best viewed in Google Chrome with the resolution of 1366 x 768 | Last update: 2 May 2019 </div></marquee>
+
+	</div>
+
+</body>
+
+</html>
