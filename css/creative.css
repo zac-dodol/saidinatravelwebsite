@@ -414,3 +414,14 @@ header.masthead p {
 .layout-height {
   height: 30rem;
 }
+
+.layout-link {
+  width: fit-content;
+}
+
+a.layout-link {
+  color: inherit; /* Resets color to inherit from parent */
+  text-decoration: none; /* Removes underline */
+  border: none; /* Removes any border */
+  background: none; /* Removes any background */
+}
