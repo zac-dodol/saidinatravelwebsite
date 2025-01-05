@@ -1,455 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="KH Services" content="" />
     <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-
-    <title>SAIDINA TRAVEL & SERVICES</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-
-    <!-- Custom fonts for this template -->
-    <link
-      href="vendor/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
-
     <!-- Custom styles for this template -->
     <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
     <link href="css/creative.css" rel="stylesheet" />
+    <title>SAIDINA TRAVEL & SERVICES</title>
   </head>
-
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img class="logo" src="img/logo.png" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#main">Main</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/umrah.html">Umrah</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/tours.html"
-                >Holidays</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/car_rental.html"
-                >Rental</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header
-      id="main"
-      class="masthead text-center text-white d-flex"
-      style="background-image: url('img/header.jpeg');"
-    >
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="text-white">
       <div
-        class="container my-auto d-grid justify-content-evenly d-sm-flex gap-4"
+        class="container d-flex justify-content-between align-items-center py-2"
       >
-        <div
-          class="d-none d-sm-flex flex-column justify-content-between layout-height"
-        >
-          <div>
-            <a href="/tours.html" class="d-grid layout-link">
-              <img
-                class="main"
-                src="img/main1.jpg"
-                alt="Top Left Image"
-                class="image top-left"
-              />
-              <span class="main-text p-2">
-                Holiday
-              </span>
-            </a>
+        <!-- <h1 class="h4 mb-0">My Website</h1> -->
+        <img class="logo" src="img/logo.png" />
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-none d-sm-block"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-
-          <div>
-            <a href="#contact" class="d-grid layout-link">
-              <img
-                class="main"
-                src="img/main2.jpg"
-                alt="Top Right Image"
-                class="image top-right"
-              />
-              <span class="main-text p-2">
-                Contact
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="text-container d-flex flex-column main-space p-1">
-          <span class="main-title font-italic fw-bold">
-            Saidina Travel & Services
-          </span>
-
-          <span class="main-subtitle">
-            Umrah, Haji & Melancong ke serata dunia
-          </span>
-
-          <span class="main-subtitle">
-            Saidina Travel Bersama Anda
-          </span>
-        </div>
-
-        <div
-          class="d-none d-sm-flex flex-column justify-content-between layout-height"
-        >
-          <div>
-            <a href="/umrah.html" class="d-grid layout-link">
-              <img
-                class="main"
-                src="img/main3.jpg"
-                alt="Bottom Left Image"
-                class="image bottom-left"
-              />
-              <span class="main-text p-2">
-                Umrah
-              </span>
-            </a>
-          </div>
-
-          <div>
-            <a href="/car_rental.html" class="d-grid layout-link">
-              <img
-                class="main"
-                src="img/main4.jpg"
-                alt="Bottom Right Image"
-                class="image bottom-right"
-              />
-              <span class="main-text p-2">
-                Car Rental
-              </span>
-            </a>
-          </div>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <section
-      id="Umrah"
-      class="px-0"
-      style="padding-top: 60px; background-color: aliceblue;"
+    <!-- Mobile Menu -->
+    <div class="collapse" id="mobileMenu">
+      <div class="bg-light p-3">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark">Home</a></li>
+          <li><a href="#" class="text-dark">About</a></li>
+          <li><a href="#" class="text-dark">Services</a></li>
+          <li><a href="#" class="text-dark">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Fullscreen Body Content -->
+    <main
+      class="flex-fill d-flex align-items-center justify-content-center text-center"
     >
-      <div class="col-lg-12 text-center" style="padding-top: 40px;">
-        <h2 class="section-heading">
-          <a class="nav-link js-scroll-trigger" href="umrah.html">
-            Our Umrah Packages
-          </a>
-        </h2>
-        <hr class="my-4" />
+      <div>
+        <h2>Welcome to My Website</h2>
+        <p>
+          This is a simple responsive template built with HTML, CSS, and
+          Bootstrap. It looks great on both desktop and mobile devices.
+        </p>
+        <p>Feel free to modify this template to suit your needs!</p>
       </div>
+    </main>
 
-      <div class="container-fluid p-0">
-        <div class="row popup-gallery d-flex justify-content-center">
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/umrah4.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/umrah4.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <!-- 12 - 23 September 2019 -->
-                  </div>
-                  <div class="project-name">Umrah Ziarah Dubai</div>
-                </div>
-              </div>
-            </a>
-          </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 My Website | All Rights Reserved</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-white">Terms of Service</a>
+        </li>
+      </ul>
+    </footer>
 
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/umrah2.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/umrah2.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <!-- Umrah Ziarah Turkey -->
-                  </div>
-                  <div class="project-name">Umrah Ziarah Turkey</div>
-                </div>
-              </div>
-            </a>
-          </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/umrah5.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/umrah5.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <!-- Umrah Ziarah Turkey -->
-                  </div>
-                  <div class="project-name">Umrah Ziarah London & Paris</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/umrah6.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/umrah6.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    <!-- Umrah Ziarah Turkey -->
-                  </div>
-                  <div class="project-name">
-                    Umrah Ziarah Switzerland & Italy
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-0" style="padding-top: 60px;">
-      <div class="col-lg-12 text-center" style="padding-top: 40px;">
-        <h2 class="section-heading">
-          <a class="nav-link js-scroll-trigger" href="#International">
-            Custom Packages
-          </a>
-        </h2>
-        <hr class="my-4" />
-      </div>
-
-      <div class="container-fluid p-0">
-        <div class="row popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/travel10.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/travel10.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">5 Days 4 Nights</div>
-                  <div class="project-name">Langkawi</div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/travel11.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/travel11.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">8 Days 6 Nights</div>
-                  <div class="project-name">Uzbekistan</div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/travel12.png">
-              <img
-                class="img-fluid"
-                src="img/portfolio/fullsize/travel12.png"
-                alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">4 Days 3 Nights</div>
-                  <div class="project-name">Kota Kinabalu & Kundasang</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">
-              Hubungi Kami Untuk Mendapatkan Promosi & Harga2 Menarik!
-            </h2>
-            <hr class="my-4" />
-            <p class="mb-5">
-              Anda Sudah Bersedia untuk mula menunaikan Ibadah Umrah dan
-              Menikmati segala yang wujud di dunia ini? <br /><b
-                >Bagus Sekali!</b
-              >
-              <br />Hubungi Kami melalui whatsapp dan talian atau anda boleh
-              Email kepada kami. Kami anda kembali kepada anda dengan tawaran2
-              menarik secepat mungking!
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>019-271-8870</p>
-            <p>Office: 03-8071 6020</p>
-            <p>Fax: 03-8071 6010</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:saidinatravel@gmail.com"
-                >saidinatravel@gmail.com</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="https://www.instagram.com/saidinatravel/" target="_blank"
-                ><p>Instagram</p></a
-              >
-            </p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a
-                href="https://www.facebook.com/saidinatravelservices/"
-                target="_blank"
-                ><p>Facebook</p></a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">
-              Kami mempunyai apa yang anda perlukan!
-            </h2>
-            <hr class="light my-4" />
-            <p class="text-faded mb-4">
-              Mulakan Ibadah Haji dan Umrah anda dengan kami!
-            </p>
-            <p class="text-faded mb-4">Mulakan Kegembiraan anda dengan kami.</p>
-            <p class="text-faded mb-4">
-              Mulakan Pengembaraan anda dengan kami.
-            </p>
-            <p class="text-faded mb-4">
-              Dan Yang paling penting, rehatkan minda anda sementara kami
-              melayani anda
-            </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"
-              >Mulakan!</a
-            >
-          </div>
-        </div>
-      </div>
-      <center>
-        <a href="OnlineMe.html" style="color: black;">
-          2015 © All rights reserved. Z Hazim.</a
-        >
-      </center>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <!-- Script to toggle mobile menu visibility -->
+    <script>
+      $(".navbar-toggler").on("click", function () {
+        $("#mobileMenu").collapse("toggle");
+      });
+    </script>
   </body>
 </html>
