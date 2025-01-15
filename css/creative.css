@@ -24,6 +24,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding: 3rem 1rem;
+  margin-top: 64px;
 }
 
 .main-space {
@@ -45,6 +46,7 @@ body {
 @media (min-width: 768px) {
   #main {
     aspect-ratio: 16 / 7;
+    margin-top: 95px;
   }
 
   .main {
