@@ -4,11 +4,73 @@ body {
   margin: 0;
 }
 
+a {
+  color: #9428be;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+hr {
+  color: #9428be;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
 
-.header {
+#main {
+  background-image: url(img/header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 3rem 1rem;
+}
+
+.main-space {
+  backdrop-filter: blur(10px);
+  height: fit-content;
+}
+
+.main-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  line-height: 125%;
+}
+
+.main-subtitle {
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+@media (min-width: 768px) {
+  #main {
+    aspect-ratio: 16 / 7;
+  }
+
+  .main {
+    height: 10rem;
+    aspect-ratio: 16 / 9;
+  }
+
+  .main-text {
+    background: #044b96;
+  }
+
+  .main-body {
+    height: 75vh;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-subtitle {
+    font-size: 2rem;
+  }
+
+  .layout-height {
+    height: 30rem;
+  }
 }
 
 .logo {
@@ -22,6 +84,18 @@ body {
 
 .navbar-light .navbar-nav .active > .nav-link {
   color: #9428be;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #9428be;
+  font-weight: bold;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #9428be;
+  font-weight: bold;
 }
 
 footer {
