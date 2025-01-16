@@ -45,89 +45,113 @@
     <link href="css/creative.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img class="logo" src="img/logo.png" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="text-white fixed-top">
+      <div class="d-flex justify-content-between align-items-center">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary w-100"
+          id="mainNav"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="container-fluid">
+            <img class="logo" src="img/logo.png" />
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#main">Main</a>
-            </li>
+            <a class="navbar-brand d-none d-md-block" href="#">
+              Saidina Travel & Services
+            </a>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="umrah.html">Umrah</a>
-            </li>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"> </span>
+            </button>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="tours.html"
-                >Holidays</a
-              >
-            </li>
+            <div
+              class="navbar-collapse collapse ms-2"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                  >
+                    Home
+                  </a>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="car_rental.html"
-                >Rental</a
-              >
-            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="umrah.html">
+                    Umrah
+                  </a>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
-            </li>
-          </ul>
-        </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="tours.html">
+                    Holidays
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="car_rental.html">
+                    Rental
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <header
+    <!-- Landing -->
+    <section
       id="main"
-      class="masthead text-center text-white d-flex"
+      class="text-center text-white d-flex"
       style="background-image: url('img/header.jpeg');"
     >
       <div
-        class="container my-auto d-grid justify-content-evenly d-sm-flex gap-4"
+        class="container main-body my-auto d-grid justify-content-evenly d-sm-flex gap-4"
       >
         <div
           class="d-none d-sm-flex flex-column justify-content-between layout-height"
         >
           <div>
-            <a href="tours.html" class="d-grid layout-link">
+            <a href="tours.html" class="d-grid">
               <img
                 class="main"
                 src="img/main1.jpg"
-                alt="Top Left Image"
+                alt="Top-Left-Image"
                 class="image top-left"
               />
-              <span class="main-text p-2">
+              <span class="main-text p-2 text-white">
                 Holiday
               </span>
             </a>
           </div>
 
           <div>
-            <a href="#contact" class="d-grid layout-link">
+            <a href="#contact" class="d-grid">
               <img
                 class="main"
                 src="img/main2.jpg"
-                alt="Top Right Image"
+                alt="Top-Right-Image"
                 class="image top-right"
               />
-              <span class="main-text p-2">
+              <span class="main-text p-2 text-white">
                 Contact
               </span>
             </a>
@@ -135,7 +159,7 @@
         </div>
 
         <div class="text-container d-flex flex-column main-space p-1">
-          <span class="main-title font-italic fw-bold">
+          <span class="main-title fst-italic fw-bold">
             Saidina Travel & Services
           </span>
 
@@ -152,11 +176,11 @@
           class="d-none d-sm-flex flex-column justify-content-between layout-height"
         >
           <div>
-            <a href="umrah.html" class="d-grid layout-link">
+            <a href="umrah.html" class="d-grid text-white">
               <img
                 class="main"
                 src="img/main3.jpg"
-                alt="Bottom Left Image"
+                alt="Bottom-Left-Image"
                 class="image bottom-left"
               />
               <span class="main-text p-2">
@@ -166,11 +190,11 @@
           </div>
 
           <div>
-            <a href="car_rental.html" class="d-grid layout-link">
+            <a href="car_rental.html" class="d-grid text-white">
               <img
                 class="main"
                 src="img/main4.jpg"
-                alt="Bottom Right Image"
+                alt="Bottom-Right-Image"
                 class="image bottom-right"
               />
               <span class="main-text p-2">
@@ -180,27 +204,27 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section class="p-0" style="padding-top: 60px;">
-      <div class="col-lg-12 text-center" style="padding-top: 40px;">
+    <!-- Travel -->
+    <section>
+      <div class="col-lg-12 text-center">
         <h2 class="section-heading">
           <a class="nav-link js-scroll-trigger" href="tours.html">
             Travel Packages
           </a>
         </h2>
-        <hr class="my-4" />
+        <hr class="my-4 w-50 m-auto" />
       </div>
 
       <div class="container-fluid p-0">
-        <div class="row popup-gallery">
-          <div class="col-lg-4 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+        <div class="popup-gallery">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/travel10.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/travel10.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -211,7 +235,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a
               class="portfolio-box"
               href="img/portfolio/fullsize/travel11.jpeg"
@@ -220,7 +244,6 @@
                 class="img-fluid"
                 src="img/portfolio/fullsize/travel11.jpeg"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -231,7 +254,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a
               class="portfolio-box"
               href="img/portfolio/fullsize/travel12.jpeg"
@@ -240,7 +263,6 @@
                 class="img-fluid"
                 src="img/portfolio/fullsize/travel12.jpeg"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -251,13 +273,12 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/travel13.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/travel13.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -268,13 +289,12 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/travel14.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/travel14.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -288,29 +308,25 @@
       </div>
     </section>
 
-    <section
-      id="Umrah"
-      class="px-0"
-      style="padding-top: 60px; background-color: aliceblue;"
-    >
-      <div class="col-lg-12 text-center" style="padding-top: 40px;">
+    <!-- Umrah -->
+    <section id="Umrah" style="background-color: aliceblue;">
+      <div class="col-lg-12 text-center">
         <h2 class="section-heading">
           <a class="nav-link js-scroll-trigger" href="umrah.html">
             Our Umrah Packages
           </a>
         </h2>
-        <hr class="my-4" />
+        <hr class="my-4 w-50 m-auto" />
       </div>
 
       <div class="container-fluid p-0">
-        <div class="row popup-gallery d-flex justify-content-center">
-          <div class="col-lg-3 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+        <div class="popup-gallery">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/umrah4.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/umrah4.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -323,13 +339,12 @@
             </a>
           </div>
 
-          <div class="col-lg-3 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/umrah2.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/umrah2.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -342,13 +357,12 @@
             </a>
           </div>
 
-          <div class="col-lg-3 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/umrah5.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/umrah5.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -361,13 +375,12 @@
             </a>
           </div>
 
-          <div class="col-lg-3 col-sm-6 mb-3 mb-md-0 mx-1 mx-md-0">
+          <div class="col-5 col-lg-3 p-0">
             <a class="portfolio-box" href="img/portfolio/fullsize/umrah6.png">
               <img
                 class="img-fluid"
                 src="img/portfolio/fullsize/umrah6.png"
                 alt=""
-                style="aspect-ratio: 1 / 1; width: auto;"
               />
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -385,96 +398,95 @@
       </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="mb-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">
-              Hubungi Kami Untuk Mendapatkan Promosi & Harga2 Menarik!
+              Promosi & Pakej Menarik!
             </h2>
-            <hr class="my-4" />
-            <p class="mb-5">
-              Anda Sudah Bersedia untuk mula menunaikan Ibadah Umrah dan
-              melancong ke serata dunia.
-              <br />
-              <br />
-              Hubungi Kami sekarang!
-            </p>
+
+            <hr class="my-4 w-50 m-auto" />
+
+            <div class="d-md-flex gap-2 justify-content-center">
+              <p>
+                Tunaikan Ibadah Umrah!
+              </p>
+
+              <p class="d-none d-md-block">|</p>
+
+              <p>
+                Melancong ke serata dunia!
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <a href="https://wa.me/60192718870">
-              <p>019-271-8870</p>
+        <div class="row justify-content-center gap-2 mb-2">
+          <div class="d-grid justify-content-center col-5">
+            <i class="fa fa-phone fa-3x sr-contact m-auto my-3"> </i>
+            <a href="https://wa.me/60192718870" target="_blank">
+              <span>
+                019-271-8870
+              </span>
             </a>
-            <p>Office: 03-8071 8558</p>
+
+            <a href="tel:(60)(380718558)">
+              03-8071 8558
+            </a>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:saidinatravel@gmail.com"
-                >saidinatravel@gmail.com</a
-              >
-            </p>
+
+          <div class="d-grid justify-content-center col-6 col-lg-4">
+            <i class="fa fa-envelope-o fa-3x sr-contact m-auto my-3"> </i>
+            <span>
+              <a href="mailto:saidinatravel@gmail.com">
+                saidinatravel@gmail.com
+              </a>
+            </span>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="https://www.instagram.com/saidinatravel/" target="_blank"
-                ><p>Instagram</p></a
+        <div class="row justify-content-center gap-2 mb-2">
+          <div class="d-grid justify-content-center col-4">
+            <i class="fa fa-instagram fa-3x sr-contact m-auto my-3"> </i>
+            <span>
+              <a
+                href="https://www.instagram.com/saidinatravel/"
+                target="_blank"
               >
-            </p>
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </span>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
-            <p>
+
+          <div class="d-grid justify-content-center col-6 col-lg-4">
+            <i class="fa fa-facebook fa-3x sr-contact m-auto my-3"> </i>
+            <span>
               <a
                 href="https://www.facebook.com/saidinatravelservices/"
                 target="_blank"
-                ><p>Facebook</p></a
               >
-            </p>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">
-              Kami mempunyai apa yang anda perlukan!
-            </h2>
-            <hr class="light my-4" />
-            <p class="text-faded mb-4">
-              Mulakan Ibadah Haji dan Umrah anda dengan kami!
-            </p>
-            <p class="text-faded mb-4">Mulakan Kegembiraan anda dengan kami.</p>
-            <p class="text-faded mb-4">
-              Mulakan Pengembaraan anda dengan kami.
-            </p>
-            <p class="text-faded mb-4">
-              Dan Yang paling penting, rehatkan minda anda sementara kami
-              melayani anda
-            </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"
-              >Mulakan!</a
-            >
-          </div>
-        </div>
-      </div>
-      <center>
-        <a href="OnlineMe.html" style="color: black;">
-          2015 © All rights reserved. Z Hazim.</a
-        >
-      </center>
-    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+      <a href="OnlineMe.html" class="text-decoration-none">
+        <span class="text-white">
+          &copy; 2015 KH Services | All Rights Reserved
+        </span>
+      </a>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

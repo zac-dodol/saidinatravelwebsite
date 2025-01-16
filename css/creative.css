@@ -9,7 +9,6 @@ body {
 }
 
 hr {
-  max-width: 50px;
   border-width: 3px;
   border-color: #9428be;
 }
@@ -56,7 +55,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 2rem 0;
 }
 
 .section-heading {
@@ -83,95 +82,6 @@ img::selection {
 img::-moz-selection {
   color: #fff;
   background: transparent;
-}
-
-#mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-#mainNav .navbar-brand {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #9428be;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
-  color: #9428be;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #212529;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #9428be;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #9428be !important;
-  background-color: transparent;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
-  background-color: transparent;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    border-color: transparent;
-    background-color: #ffffff;
-  }
-  #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  #mainNav .navbar-brand:focus,
-  #mainNav .navbar-brand:hover {
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 0.5rem 1rem;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(0, 0, 0, 0.5);
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #000000;
-  }
-  #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-    background-color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #9428be;
-  }
-  #mainNav.navbar-shrink .navbar-brand:focus,
-  #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #9428be;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #212529;
-  }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #9428be;
-  }
 }
 
 header.masthead {
@@ -384,69 +294,90 @@ header.masthead p {
   aspect-ratio: 16 / 9;
 }
 
-.main {
-  height: 10rem;
-  aspect-ratio: 16 / 9;
-}
-
-.main-space {
-  backdrop-filter: blur(10px);
-  height: fit-content;
-}
-
-.main-title {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 2.5rem;
-  line-height: 125%;
-  color: #000;
-}
-
-.main-subtitle {
-  font-size: 1.5rem;
-  line-height: 125%;
-  color: #000;
-}
-
-.main-text {
-  background: #044b96;
-}
-
-.layout-height {
-  height: 30rem;
-}
-
 @media (max-width: 768px) {
   .logo {
     height: 3rem;
     aspect-ratio: 16 / 9;
   }
+}
+
+#main {
+  background-image: url(img/header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 3rem 1rem;
+  margin-top: 64px;
+}
+
+#umrah {
+  padding-top: 75px;
+}
+
+.main-space {
+  backdrop-filter: blur(20px);
+  height: fit-content;
+}
+
+.main-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  line-height: 125%;
+}
+
+.main-subtitle {
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+@media (min-width: 768px) {
+  #main,
+  #umrah,
+  #international {
+    aspect-ratio: 16 / 7;
+    margin-top: 95px;
+  }
+
+  #umrah {
+    padding-top: 0;
+  }
+
+  .main {
+    height: 10rem;
+    aspect-ratio: 16 / 9;
+  }
+
+  .main-text {
+    background: #044b96;
+  }
+
+  .main-body {
+    height: 75vh;
+  }
 
   .main-title {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 1.5rem;
-    line-height: 125%;
-    color: #000;
+    font-size: 3rem;
   }
 
   .main-subtitle {
-    font-size: 1rem;
-    line-height: 125%;
-    color: #000;
+    font-size: 2rem;
   }
 
   .layout-height {
-    height: 27rem;
+    height: 30rem;
   }
 }
 
-.layout-link {
-  width: fit-content;
+.popup-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-a.layout-link {
-  color: inherit; /* Resets color to inherit from parent */
-  text-decoration: none; /* Removes underline */
-  border: none; /* Removes any border */
-  background: none; /* Removes any background */
+@media (min-width: 768px) {
+  .popup-gallery {
+    gap: 2rem;
+  }
 }
