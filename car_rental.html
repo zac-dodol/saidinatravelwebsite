@@ -13,6 +13,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <!-- Custom fonts for this template -->
     <link
@@ -39,158 +45,186 @@
     <link href="css/creative.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img class="logo" src="img/logo.png" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="text-white fixed-top">
+      <div class="d-flex justify-content-between align-items-center">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary w-100"
+          id="mainNav"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="container-fluid">
+            <img class="logo" src="img/logo.png" />
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">Main</a>
-            </li>
+            <a class="navbar-brand d-none d-md-block" href="#">
+              Saidina Travel & Services
+            </a>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="umrah.html">Umrah</a>
-            </li>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"> </span>
+            </button>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="tours.html"
-                >Holidays</a
-              >
-            </li>
+            <div
+              class="navbar-collapse collapse ms-2"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                  >
+                    Home
+                  </a>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#carRental">Rental</a>
-            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="umrah.html">
+                    Umrah
+                  </a>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
-            </li>
-          </ul>
-        </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="tours.html">
+                    Holidays
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="car_rental.html">
+                    Rental
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <section class="p-0" style="padding-top: 100px !important;" id="carRental">
+    <section class="p-0" id="carRental">
       <div class="container" id="carRental">
         <div class="row align-items-center">
-          <a href="img/fullsize/carRental1.png" target="_blank">
+          <a href="img/carRental1.png" target="_blank">
             <img class="img-fluid" src="img/carRental1.png" alt="" />
           </a>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="mb-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">
-              Hubungi Kami Untuk Mendapatkan Promosi & Harga2 Menarik!
+              Promosi & Pakej Menarik!
             </h2>
-            <hr class="my-4" />
-            <p class="mb-5">
-              Anda Sudah Bersedia untuk mula menunaikan Ibadah Umrah dan
-              Menikmati segala yang wujud di dunia ini? <br /><b
-                >Bagus Sekali!</b
-              >
-              <br />Hubungi Kami melalui whatsapp dan talian atau anda boleh
-              Email kepada kami. Kami anda kembali kepada anda dengan tawaran2
-              menarik secepat mungking!
-            </p>
+
+            <hr class="my-4 w-50 m-auto" />
+
+            <div class="d-md-flex gap-2 justify-content-center">
+              <p>
+                Tunaikan Ibadah Umrah!
+              </p>
+
+              <p class="d-none d-md-block">|</p>
+
+              <p>
+                Melancong ke serata dunia!
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>019-271-8870</p>
-            <p>Office: 03-8071 6020</p>
-            <p>Fax: 03-8071 6010</p>
+        <div class="row justify-content-center gap-2 mb-2">
+          <div class="d-grid justify-content-center col-5">
+            <i class="fa fa-phone fa-3x sr-contact m-auto my-3"> </i>
+            <a href="https://wa.me/60192718870" target="_blank">
+              <span>
+                019-271-8870
+              </span>
+            </a>
+
+            <a href="tel:(60)(380718558)">
+              03-8071 8558
+            </a>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:saidinatravel@gmail.com"
-                >saidinatravel@gmail.com</a
-              >
-            </p>
+
+          <div class="d-grid justify-content-center col-6 col-lg-4">
+            <i class="fa fa-envelope-o fa-3x sr-contact m-auto my-3"> </i>
+            <span>
+              <a href="mailto:saidinatravel@gmail.com">
+                saidinatravel@gmail.com
+              </a>
+            </span>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="https://www.instagram.com/saidinatravel/" target="_blank"
-                ><p>Instagram</p></a
+        <div class="row justify-content-center gap-2 mb-2">
+          <div class="d-grid justify-content-center col-4">
+            <i class="fa fa-instagram fa-3x sr-contact m-auto my-3"> </i>
+            <span>
+              <a
+                href="https://www.instagram.com/saidinatravel/"
+                target="_blank"
               >
-            </p>
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </span>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
-            <p>
+
+          <div class="d-grid justify-content-center col-6 col-lg-4">
+            <i class="fa fa-facebook fa-3x sr-contact m-auto my-3"> </i>
+            <span>
               <a
                 href="https://www.facebook.com/saidinatravelservices/"
                 target="_blank"
-                ><p>Facebook</p></a
               >
-            </p>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">
-              Kami mempunyai apa yang anda perlukan!
-            </h2>
-            <hr class="light my-4" />
-            <p class="text-faded mb-4">
-              Mulakan Ibadah Haji dan Umrah anda dengan kami!
-            </p>
-            <p class="text-faded mb-4">Mulakan Kegembiraan anda dengan kami.</p>
-            <p class="text-faded mb-4">
-              Mulakan Pengembaraan anda dengan kami.
-            </p>
-            <p class="text-faded mb-4">
-              Dan Yang paling penting, rehatkan minda anda sementara kami
-              melayani anda
-            </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services"
-              >Mulakan!</a
-            >
-          </div>
-        </div>
-      </div>
-      <center>
-        <a href="OnlineMe.html" style="color: black;">
-          2015 © All rights reserved. Z Hazim.</a
-        >
-      </center>
-    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-center py-3">
+      <a href="OnlineMe.html" class="text-decoration-none">
+        <span class="text-white">
+          &copy; 2015 KH Services | All Rights Reserved
+        </span>
+      </a>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

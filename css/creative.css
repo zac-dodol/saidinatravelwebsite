@@ -289,6 +289,7 @@ header.masthead p {
   }
 }
 
+/* ````````````````````` upgrade ````````````````````````` */
 .logo {
   height: 5rem;
   aspect-ratio: 16 / 9;
@@ -379,5 +380,18 @@ header.masthead p {
 @media (min-width: 768px) {
   .popup-gallery {
     gap: 2rem;
+  }
+}
+
+#carRental .img-fluid {
+  margin-top: 5rem;
+  max-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  #carRental .img-fluid {
+    max-height: 80vh;
+    display: flex;
+    margin: 7rem auto;
   }
 }
